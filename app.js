@@ -98,5 +98,11 @@ function itemToCart(item){
     purchasedItem.appendChild(cost);
 
     
-
+    let costDisplay = document.querySelector('#grand');
+    let totalCost = costDisplay.textContent + item.cost;
+    console.log(totalCost);
+    totalCost.textContent = totalCost;
 }
+
+
+

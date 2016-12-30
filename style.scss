@@ -5,17 +5,30 @@
 
 body{
     font-family:Impact;
+
+}
+
+header{
+    @include grid-row();
+    background-color:teal;
+    
+    h1{  
+     @include grid-column(12);
+     text-align: center;
+     color:white;
+    }
 }
 
 main{
     @include grid-row();
 
 
-.products{
-    @include grid-column(8);
-    
-    background-color: cornflowerblue;
-}
+    .products{
+         @include grid-column(8);
+        background-color: cornflowerblue;
+     }
+
+
 
 ul{
     @include grid-row();
