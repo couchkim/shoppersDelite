@@ -1,0 +1,22 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+
+
+main{
+    @include grid-row();
+
+
+.products{
+    @include grid-column(8);
+    background-color: cornflowerblue;
+}
+
+.cart{
+    @include grid-column(4);
+    background-color: mediumpurple;
+}
+
+}
