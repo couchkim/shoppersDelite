@@ -77,3 +77,26 @@ function loadProducts(items){
     };
 
 };
+
+function itemToCart(item){
+
+    let parent = document.querySelector('#itemsBought');
+    let purchasedItem = document.createElement('li');
+    purchasedItem.setAttribute('id', 'bought');
+    parent.appendChild(purchasedItem);
+
+    let store = document.createElement('h3');
+    store.textContent = item.name;
+    purchasedItem.appendChild(store);
+
+    let description = document.createElement('p');
+    description.textContent = item.description;
+    purchasedItem.appendChild(description);
+
+    let cost = document.createElement('p');
+    cost.textContent = "$" + item.cost;
+    purchasedItem.appendChild(cost);
+
+    
+
+}

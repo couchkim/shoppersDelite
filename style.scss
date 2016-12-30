@@ -3,7 +3,9 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-
+body{
+    font-family:Impact;
+}
 
 main{
     @include grid-row();
@@ -52,6 +54,20 @@ ul{
 .cart{
     @include grid-column(4);
     background-color: mediumpurple;
+
+    h1{
+        display:inline-block;
+
+    }
+
+    img{
+        width:40px;
+        display:inline-block;
+        margin: 5px 40px;
+      
+    }
 }
+
+
 
 }
