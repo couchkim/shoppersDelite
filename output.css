@@ -1403,5 +1403,11 @@ main {
       width: 40px;
       display: inline-block;
       margin: 5px 40px; }
+    main .cart button {
+      background-color: cornflowerblue;
+      border-radius: 10px;
+      font-size: 1em;
+      padding: 20px;
+      margin: 20px 150px; }
 
 /*# sourceMappingURL=output.css.map */

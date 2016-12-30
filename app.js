@@ -72,6 +72,7 @@ function loadProducts(items){
         productSection.appendChild(addToCart);
         addToCart.addEventListener('click', function(){
             itemToCart(items[i]);
+            calculateTotal(items[i].cost);
         });
 
     };
@@ -96,13 +97,31 @@ function itemToCart(item){
     let cost = document.createElement('p');
     cost.textContent = "$" + item.cost;
     purchasedItem.appendChild(cost);
-
-    
-    let costDisplay = document.querySelector('#grand');
-    let totalCost = costDisplay.textContent + item.cost;
-    console.log(totalCost);
-    totalCost.textContent = totalCost;
 }
 
+let subtotal = 0;
 
+function calculateTotal(cost){
+    
+    subtotal = subtotal + cost;
+
+    let tax = subtotal * .075;
+    let total = subtotal + tax;
+
+    // let parent = document.querySelector('#total');
+    
+    let subtotalDisplay = document.querySelector('#subtotal');
+    subtotalDisplay.textContent = "Subtotal  $" + subtotal;
+    // parent.appendChild(subtotalDisplay);
+
+    let taxDisplay = document.querySelector('#tax');
+    taxDisplay.textContent = "Tax  $" + tax;
+    // parent.appendChild(taxDisplay);
+
+    let totalDisplay = document.querySelector('#grand');
+    totalDisplay.textContent = "Total  $" + total;
+    // parent.appendChild(totalDisplay);
+
+
+}
 
