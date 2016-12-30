@@ -1309,6 +1309,55 @@ main {
         padding-right: 0.9375rem; } }
     main .products:last-child:not(:first-child) {
       float: right; }
+  main ul {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto; }
+    main ul::before, main ul::after {
+      content: ' ';
+      display: table; }
+    main ul::after {
+      clear: both; }
+  main li {
+    list-style-type: none;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto; }
+    main li::before, main li::after {
+      content: ' ';
+      display: table; }
+    main li::after {
+      clear: both; }
+  main #imgSection {
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
+    @media screen and (min-width: 40em) {
+      main #imgSection {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    main #imgSection:last-child:not(:first-child) {
+      float: right; }
+  main #picture {
+    width: 300px;
+    padding: 20px; }
+  main #productSection {
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
+    @media screen and (min-width: 40em) {
+      main #productSection {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    main #productSection:last-child:not(:first-child) {
+      float: right; }
+  main button {
+    padding: 20px;
+    background-color: mediumpurple;
+    font-size: 1em;
+    border-radius: 10px; }
   main .cart {
     width: 33.33333%;
     float: left;

@@ -11,8 +11,43 @@ main{
 
 .products{
     @include grid-column(8);
+    
     background-color: cornflowerblue;
 }
+
+ul{
+    @include grid-row();
+}
+
+    li{
+        list-style-type:none;
+        @include grid-row();
+    }
+
+    #imgSection{
+        @include grid-column(5);
+    }
+
+        #picture{
+            width:300px;
+            padding:20px;
+
+        }
+
+    
+
+    #productSection{
+        @include grid-column(7);
+    }   
+
+    button{
+        padding:20px;
+        background-color:mediumpurple;
+        font-size:1em;
+        border-radius:10px;
+    }
+
+
 
 .cart{
     @include grid-column(4);
